@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Estilos-main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital@1&family=Heebo:wght@400;900&family=Montserrat:wght@100&family=Roboto:wght@400;500;700&family=Zen+Kaku+Gothic+Antique:wght@300&family=Zen+Maru+Gothic:wght@300&display=swap" rel="stylesheet">
+    <title>Inicio</title>
+    <script>
+        function insertH1() {
+            var data = localStorage.getItem("username");
+            var h1 = document.createElement("h1");
+            h1.innerHTML = data;
+            var div = document.getElementById("main-container");
+            div.appendChild(h1);
+        }
+    </script>
+    <script src="./JS/logout.js"></script>
+</head>
+<body onload="insertH1()">
+   
+    <nav>
+      
+        <a href="#" class="nav-clase" >Ayuda</a>
+        <a href="#" class="nav-clase">Servicios</a>
+        <a href="https://www.linkedin.com/in/laura-aurelia-leyva-morales-089b38255/" class="nav-clase">Contacto</a>
+        <a href="#" onclick="CerrarSesion()" class="nav-clase">Cerrar Sesión</a>
+    </nav>
+   
+    <div id="main-container">
+        <h1> Welcome</h1>
+    </div>
+
+
+    <footer>
+           <p>@Prueba vacante frontend SEINTI</p>
+
+    </footer>
+    
+</body>
+</html>

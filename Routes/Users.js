@@ -18,7 +18,9 @@ user.post("/signin", async (req, res, next) => {
         data: { nombre: `${full_name}`, user_name: `${user_name}` },
       });
     }
-    return res.status(500).json({ code: 500, message: "Ocurrio un error aquí" });
+    return res
+      .status(500)
+      .json({ code: 500, message: "Ocurrio un error aquí" });
   }
   return res.status(500).json({ code: 500, message: "Campos Incompletos" });
 });
@@ -40,7 +42,7 @@ user.post("/login", async (req, res, next) => {
       return res.status(200).json({
         code: 200,
         message: token,
-        data: { user_name: `${user_name}` },
+        user_name: user_name,
       });
     } else {
       return res

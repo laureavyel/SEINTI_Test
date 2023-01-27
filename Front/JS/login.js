@@ -10,7 +10,7 @@ function init() {
 
     document.querySelector("#singUp-button").addEventListener("click", login);
   } else {
-    alert("Si funciona");
+    window.location.href = "Principal.html";
   }
 }
 
@@ -30,7 +30,7 @@ function login() {
   req.addEventListener("load", function () {
     const res = JSON.parse(req.responseText);
     localStorage.setItem("token", res.message);
-    
+    localStorage.setItem("username", res.user_name);
   });
 
   req.send(JSON.stringify(user));
