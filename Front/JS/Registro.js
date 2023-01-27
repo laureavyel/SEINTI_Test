@@ -18,6 +18,7 @@ function Registro() {
   req.addEventListener("load", function () {
     const res = JSON.parse(req.responseText);
     alert(res.message);
+    window.location.href = "Login.html";
   });
 
   req.send(JSON.stringify(user));
