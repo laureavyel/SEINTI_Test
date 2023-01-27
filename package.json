@@ -2,8 +2,9 @@
   "name": "test",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "Index.js",
   "scripts": {
+    "start": "nodemon Index",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,6 +21,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "jsonwebtoken": "^9.0.0",
-    "mysql": "^2.18.1"
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.20"
   }
 }

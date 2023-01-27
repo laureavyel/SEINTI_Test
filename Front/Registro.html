@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
     </style>
+     <script src="./JS/Registro.js"></script>
 
     <title>Registro</title>
 </head>
@@ -26,17 +27,17 @@
     
     <div class="general-form">
         <h4> User Name:</h4>
-        <input type="text" placeholder="Example: Name_Name"/><br>
+        <input type="text" placeholder="Example: Name_Name" id="input_username"/><br>
         <h4> Full Name:</h4>
-        <input type="text" placeholder="Example: Name_Name"/><br>
+        <input type="text" placeholder="Example: Name_Name" id="input_fullname"/><br>
         <h4>Password:</h4>
-        <input type="password" placeholder="*********"/>
+        <input type="password" placeholder="*********" id="input_password"/>
         <h4>Confirm Password:</h4>
         <input type="password" placeholder="*********"/>
         <br>
 
        <div class="container-login-button-2">
-        <button type="button" id="login-button-2"> Login </button>
+        <button type="submit" id="login-button-2" onclick="Registro()"> Login </button>
        </div>
 
     </div>

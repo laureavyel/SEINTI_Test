@@ -9,6 +9,7 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
     </style>
+    <script src="./JS/login.js"></script>
 
     <title>Login</title>
 </head>
@@ -29,14 +30,14 @@
    
     <div class="general-form">
         <h4> User Name:</h4>
-        <input type="text" placeholder="Example: Name_Name"/><br>
+        <input type="text" placeholder="Example: Name_Name" id="input_username"/><br>
         <h4>Password:</h4>
-        <input type="password" placeholder="*********"/>
+        <input type="password" placeholder="*********" id="input_password"/>
         <br>
         <br>
     </div>
 
-    <button type="button" id="login-button"> Login </button>
+    <button type="submit" id="login-button" onclick="login()"> Login </button>
     <button type="button" id="singUp-button"> Sing Up</button>
     
     <div class="texto-olvidaste-contraseña">
